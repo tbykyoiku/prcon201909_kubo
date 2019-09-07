@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+html {
+    height: 100%;
+}
+
+body {
+	height: 100%;
+	background: #a4d1c8;
+	margin: 0;
+}
+
+b {
+	font-size: 12pt;
+}
+
+p {
+	margin: 0px;
+}
+/* 背景透過 */
+.main {
+	width:  802px; 
+	margin:  0 auto 0px;
+	position: relative;
+	background: #4b4b4b;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	color: #323232;
+	font-size: 10pt;
+}
+
+/* スケッチエリア */
+/* ヘッダ */
+.sketch_head {
+	margin:  0 auto 0px;
+	padding: 0px 0px 0px 0px;
+	width:  800px;
+	background: #ffffff;
+}
+
+/* ボタン・ラベル(ヘッダ) */
+.button_list {
+	width:  800px; 
+	margin:  0 auto 0px;
+	padding: 0px;
+	background: #ffffff;
+	text-align: center;
+}
+
+#uploadFile {
+	/* アップロードボタンのスタイルを無効 */
+	display:none;
+}
+
+
+.button_list > input[type="button"] {
+	margin: 5px 5px 0px 3px;
+	padding: 5px 3px;
+	height: 22pt;
+	width: 50pt;
+	color: #ffffff;
+	background-color: #4b4b4b;
+	border: 1px solid #4b4b4b;
+	border-radius: 3px;
+	transition: .4s;
+	font-size: 10pt;
+	display: inline-block;
+}
+
+#undo {
+	margin-left: 180px;
+	margin-right: 0px;
+}
+
+#redo {
+	margin-left: 0px;
+	margin-right: 3px;
+}
+
+#clear {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+#downloadFile {
+	margin-left: 3px;
+	margin-right: 0px;
+}
+
+#upload_btn {
+	padding: 4px 3px;
+	width: 50pt;
+	color: #ffffff;
+	background-color: #4b4b4b;
+	border: 1px solid #4b4b4b;
+	border-radius: 3px;
+	transition: .4s;
+	font-size: 10pt;
+	display: inline-block;
+}
+
+.button_list > input:hover,
+#upload_btn:hover {
+	cursor: pointer;
+	background-color: #ffffff;
+	border-color: #4b4b4b;
+	color: #a6937c;
+	font-size: 10pt;
+}
+
+#fileName {
+	margin-left: 0px;
+	margin-right: 0px;
+	outline: 0;
+	border:none;
+}
+
+.sketch_img {
+    height: 49px;
+	background: #ffffff;
+}
+
+/* キャンバス */
+.sketchbook{
+	margin:  0 auto 0px;
+	padding: 0px 0px 0px 0px;
+	height: 600px;
+	width:  800px;
+	background: #ffffff;
+	overflow: hidden;
+	cursor:crosshair;
+}
+
+/* ラジオボタン */
+.radio_list {
+	margin-right: 20px;
+	color: #ffffff;
+	font-size: 10pt;
+	text-align: right;
+}
+
+.radio_list > input {
+	vertical-align: -0.2em;
+}
+
+/* ツールエリア */
+.tool_setting {
+	position: absolute;
+	top: 0px;
+	left: 800px;
+	width: 300px;
+	overflow: visible;
+}
+
+/* カラーピッカー */
+.colorPicker {
+	padding: 5px 10px 10px 10px;
+}
+#color{
+	margin-bottom: 10px;
+	border:1px solid #4b4b4b;
+	border-radius: 5px;
+}
+
+/* スウォッチ */
+.swatch {
+	margin-top: 12px;
+	width:  235px;
+	height: 94px;
+	overflow: auto;
+	border:1px solid #ffffff;
+	border-radius:5px;
+	background-color: #ffffff;
+}
+
+li {
+	margin:  0px;
+	padding: 0px;
+	width:   15px;
+	height:  15px;
+	border:1pt solid #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	text-align: -webkit-match-parent;
+}
+
+#white {
+	margin:  0px;
+	padding: 0px;
+	width:  14px;
+	height: 14px;
+	border: 1pt solid #d8d8d8;
+	cursor: pointer;
+	display: inline-block;
+	text-align: -webkit-match-parent;
+
+}
+
+li:hover,
+#white:hover {
+	cursor: pointer;
+	border:1px solid #000000;
+}
+
+ul {
+	margin:  1px;
+	padding: 0px;
+	list-style: none;
+}
+
+.tool_list {
+	padding: 10px;
+}
+
+/* ツールボタン */
+#brush1, 
+#brush2, 
+#brush3, 
+#brush4, 
+#brush5, 
+#eraser, 
+#bucket, 
+#spuit, 
+#line, 
+#square, 
+#circle {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border:2px solid #4b4b4b;
+	border-radius:5px;
+	background-color: #ffffff;
+}
+
+#brush1:hover,
+#brush2:hover,
+#brush3:hover,
+#brush4:hover,
+#brush5:hover,
+#eraser:hover,
+#bucket:hover,
+#spuit:hover,
+#line:hover,
+#square:hover,
+#circle:hover {
+	background-color: #ff8a5c;
+	cursor: pointer;
+}
+
+.tool-detail {
+	margin-top: 3px;
+}
+
+.slider-wrapper {
+	margin: 5px;
+	width: 230px;
+	font-size: 10pt;
+	padding-bottom: 1px;
+}
+
+.slider-wrapper > input {
+	width: 50px;
+}
+
+.font-select {
+	margin-top: 4px;
+}
+
+.textInput {
+	padding: 8px 10px 0px 10px;
+}
+
+#text {
+	margin-top: 3px;
+	height: 20px;
+}
